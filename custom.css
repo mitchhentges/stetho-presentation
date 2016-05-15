@@ -1,0 +1,183 @@
+body {
+  background: #222;
+  overflow: hidden;
+}
+
+#stetho-logo {
+	position: relative;
+	margin: 0 auto;
+	z-index: 5;
+	background: none;
+	border: none;
+	box-shadow: none;
+	max-height: 300px;
+	max-width: 300px;
+}
+
+@-webkit-keyframes rotating {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.starburst {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: rotating linear 60s infinite;
+          animation: rotating linear 60s infinite;
+}
+
+.star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.star:first-child {
+  width: 4rem;
+  height: 4rem;
+  margin: -2rem 0 0 -2rem;
+  background: #dd0;
+  border-radius: 50%;
+}
+
+.star:nth-child(2) {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.star:nth-child(3) {
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+
+.star:nth-child(4) {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.star:nth-child(5) {
+  -webkit-transform: rotate(55deg);
+          transform: rotate(55deg);
+}
+
+.star:nth-child(6) {
+  -webkit-transform: rotate(70deg);
+          transform: rotate(70deg);
+}
+
+.star:nth-child(7) {
+  -webkit-transform: rotate(85deg);
+          transform: rotate(85deg);
+}
+
+.star:nth-child(8) {
+  -webkit-transform: rotate(100deg);
+          transform: rotate(100deg);
+}
+
+.star:nth-child(9) {
+  -webkit-transform: rotate(115deg);
+          transform: rotate(115deg);
+}
+
+.star:nth-child(10) {
+  -webkit-transform: rotate(130deg);
+          transform: rotate(130deg);
+}
+
+.star:nth-child(11) {
+  -webkit-transform: rotate(145deg);
+          transform: rotate(145deg);
+}
+
+.star:nth-child(12) {
+  -webkit-transform: rotate(160deg);
+          transform: rotate(160deg);
+}
+
+.star:nth-child(13) {
+  -webkit-transform: rotate(175deg);
+          transform: rotate(175deg);
+}
+
+.star:nth-child(14) {
+  -webkit-transform: rotate(190deg);
+          transform: rotate(190deg);
+}
+
+.star:nth-child(15) {
+  -webkit-transform: rotate(205deg);
+          transform: rotate(205deg);
+}
+
+.star:nth-child(16) {
+  -webkit-transform: rotate(220deg);
+          transform: rotate(220deg);
+}
+
+.star:nth-child(17) {
+  -webkit-transform: rotate(235deg);
+          transform: rotate(235deg);
+}
+
+.star:nth-child(18) {
+  -webkit-transform: rotate(250deg);
+          transform: rotate(250deg);
+}
+
+.star:nth-child(19) {
+  -webkit-transform: rotate(265deg);
+          transform: rotate(265deg);
+}
+
+.star:nth-child(20) {
+  -webkit-transform: rotate(280deg);
+          transform: rotate(280deg);
+}
+
+.star:nth-child(21) {
+  -webkit-transform: rotate(295deg);
+          transform: rotate(295deg);
+}
+
+.star:nth-child(22) {
+  -webkit-transform: rotate(310deg);
+          transform: rotate(310deg);
+}
+
+.star:nth-child(23) {
+  -webkit-transform: rotate(325deg);
+          transform: rotate(325deg);
+}
+
+.star:nth-child(24) {
+  -webkit-transform: rotate(340deg);
+          transform: rotate(340deg);
+}
+
+.star::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50vmax;
+  height: 50vmax;
+  background: #dd0;
+  -webkit-transform: skew(80deg);
+          transform: skew(80deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
