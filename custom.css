@@ -1,6 +1,14 @@
 body {
-  background: #222;
   overflow: hidden;
+}
+
+.reveal .slides section img {
+  background: none;
+  border: none;
+}
+
+#fuzzle {
+  margin: 100px;
 }
 
 #stetho-logo {
